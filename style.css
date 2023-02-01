@@ -1,0 +1,422 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.header{
+   min-height: 100vh;
+   width: 100%;
+   background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/BG.jpg);
+   background-position: center;
+   background-size: cover;
+   position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 80px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: plum;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li a:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: white;
+}
+/*--directors--*/
+
+.director{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+   
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.dir-col{
+    flex-basis: 31%;
+    background: palevioletred;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.dir-col:hover{
+    box-shadow: grey;
+}
+
+/*--picture of director--*/
+
+.picture{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.pic-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.pic-col img{
+    width: 100%;
+    display: block;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(226,0,0,0.7) ;
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/*--outlets--*/
+
+
+.outlet{
+    margin:auto;
+    padding-top: 27px;
+    background-color: pink;
+    text-align: center;
+}
+.outlet ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    text-align:center;
+}
+.outlet ul li a{
+    text-decoration: none;
+    color: black;
+  
+}
+.outlet ul li a:hover{
+    color: darkblue;
+    font-style: italic;
+}
+
+/*--list outlets--*/
+
+.box1{
+    text-align:center;
+    color: black;
+    margin-top: 90px;
+    align-content: center;
+}
+.box1 h1{
+    color:purple;
+}
+.box1 p{
+    padding: 1px;
+}
+
+.box2{
+    text-align:center;
+    color: black;
+    margin-top: 90px;
+    align-content: center;
+}
+.box2 h1{
+    color:purple;
+}
+.box2 p{
+    padding: 1px;
+}
+
+.box3, .box4,.box5,.box6,.box7,.box8,.box9,.box10,.box11,.box12,.box13,.box14,.box15{
+    text-align:center;
+    color: black;
+    margin-top: 90px;
+    align-content: center;
+}
+
+.gotopbtn{
+    position:fixed;
+    width:50px;
+    height:50px;
+    bottom:40px;
+    right:50px;
+
+    text-decoration:none;
+    text-align:center;
+    line-height:50px;
+    font-size:22px;
+}
+html{
+    scroll-behavior:smooth;
+}
+
+/*--contact--*/
+
+.cont-col input, .cont-col option{
+    width:70%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;   
+}
+.button{
+   
+    width:20%;
+    height:50px;
+    bottom:40px;
+    right:50px;
+}
+
+/*menu*/
+
+.menu{
+    margin:auto;
+    padding-top: 27px;
+    background-color: peachpuff;
+    text-align: center;
+    text-decoration: none;
+    
+}
+.menu button{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    text-align:center;
+    text-decoration: none;
+    
+}
+.menu ul button::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    display: block;
+    transition: 0.5s;
+
+}
+.menu ul button a:hover{
+    width: 100%;
+}
+
+.pheading {
+    text-align: left;
+    padding-left: 20px;
+    margin: 50px 0;
+    color: purple;
+  }
+  
+  
+  .sec {
+    padding: 10px 5%;
+  }
+  
+  
+  .Flavours {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+  }
+  
+  .Flavours .card {
+    width: 310px;
+    background: #f5f5f5;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .Flavours .card img {
+    height: 300px;
+    width: 200px;
+  }
+  
+  .Flavours .card .desc {
+    padding: 5px 20px;
+    opacity: 0.8;
+    font-weight: 600;
+    color: purple;
+  }
+  
+  .Flavours .card .title {
+    font-weight: 900;
+    font-size: 20px;
+    color: purple;
+    padding: 0 20px;
+  }
+  
+  .Flavours .card .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  
+  .Flavours .card .box .btn {
+    font-size: 13px;
+    color: purple;
+    padding: 10px 18px;
+    font-weight: 900;
+    border: 1px solid purple;
+    border-radius: 20px;
+  }
+  
+  .Flavours .card .box .btn:hover{
+    cursor: pointer;
+    background-color: purple;
+    color: white;
+  }
+ 
+.fa-facebook
+  {
+    color: blue;
+  }
+
+.fa-twitter
+  {
+    color: #00acee;
+  }
+
+.fa-instagram
+  {
+    color: crimson;
+  }
+
+div.box16
+  {
+      float: right;
+      width: 20%;
+      height: 150px;
+      text-align: center;
+      
+     
+  }
+
+  div.box17
+  {
+      float: left;
+      width: 60%;
+      background-color: rgb(224, 118, 118);
+      height: 1050px;
+      opacity: 75%;
+  }
+
+  div.box18
+  {
+      float: right;
+      width: 40%;
+      height: 350px;
+  }
+
+  div.box19
+  {
+      float: left;
+      width: 40%;
+      height: 100%;
+     
+  }
+
+  p.qer
+  {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(32, 21, 21);
+    font-size: 170%;
+  }
+
+  p.qerr
+  {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(36, 0, 41);
+    font-size: 170%;
+  }
+
+
+.imagesss
+  {
+    margin-top: 20%;
+    margin-left: 30%;
+  }
